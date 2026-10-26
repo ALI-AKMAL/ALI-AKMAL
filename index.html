@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ali Akmal | Data Analyst & Python Developer</title>
+  <meta name="description" content="Portfolio of Ali Akmal: data analyst working with Power BI, SQL, Excel and Python." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Boot sequence (runs once per visit) -->
+  <div class="boot" id="boot" aria-hidden="true">
+    <pre id="bootText"></pre>
+  </div>
+
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="glow" id="glow" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- Navigation styled as editor tabs -->
+  <header class="topbar">
+    <a href="#home" class="brand">ali<span class="k">@</span>portfolio<span class="c">:~$</span></a>
+    <nav class="tabs" aria-label="Main">
+      <a href="#home" class="tab active">home.py</a>
+      <a href="#about" class="tab">about.md</a>
+      <a href="#skills" class="tab">skills.json</a>
+      <a href="#projects" class="tab">projects/</a>
+      <a href="#log" class="tab">git.log</a>
+      <a href="#contact" class="tab">contact.sh</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero wrap">
+      <div class="hero-text">
+        <p class="hello"><span class="c">&gt;</span> hello, world. I'm</p>
+        <h1 class="name" data-text="Ali Akmal">Ali Akmal</h1>
+        <p class="role"><span id="typed"></span><span class="caret"></span></p>
+        <p class="lead">
+          Final-year IT student building dashboards, queries and small tools that turn messy
+          data into clear answers. Open to freelance projects.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">view projects</a>
+          <a class="btn" href="#contact">hire me</a>
+        </div>
+        <ul class="socials">
+          <li><a href="https://github.com/ALI-AKMAL?tab=repositories" target="_blank" rel="noopener">github</a></li>
+          <li><a href="https://www.linkedin.com/in/ali-mehdi-17a706256/" target="_blank" rel="noopener">linkedin</a></li>
+          <li><a href="https://www.upwork.com/freelancers/~01706f87c836271a22?viewMode=1" target="_blank" rel="noopener">upwork</a></li>
+        </ul>
+      </div>
+
+      <div class="editor" aria-label="Code snippet describing Ali Akmal">
+        <div class="editor-bar">
+          <span class="dots"><i></i><i></i><i></i></span>
+          <span class="file">ali_akmal.py</span>
+        </div>
+        <pre class="code"><code><span class="ln">1</span><span class="line" style="--i:0"><span class="k">class</span> <span class="f">AliAkmal</span>:</span>
+<span class="ln">2</span><span class="line" style="--i:1">    role = <span class="s">"Data Analyst"</span></span>
+<span class="ln">3</span><span class="line" style="--i:2">    stack = [<span class="s">"Power BI"</span>, <span class="s">"SQL"</span>,</span>
+<span class="ln">4</span><span class="line" style="--i:3">             <span class="s">"Excel"</span>, <span class="s">"Python"</span>]</span>
+<span class="ln">5</span><span class="line" style="--i:4">    next_goal = <span class="s">"Python backend dev"</span></span>
+<span class="ln">6</span><span class="line" style="--i:5">    freelance = [<span class="s">"Upwork"</span>, <span class="s">"Fiverr"</span>]</span>
+<span class="ln">7</span><span class="line" style="--i:6"></span>
+<span class="ln">8</span><span class="line" style="--i:7">    <span class="k">def</span> <span class="f">available</span>(self):</span>
+<span class="ln">9</span><span class="line" style="--i:8">        <span class="k">return</span> <span class="n">True</span>  <span class="c"># let's talk</span></span></code></pre>
+        <div class="status"><span class="live"></span> available for freelance work</div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="wrap section">
+      <h2 class="reveal"><span class="c">//</span> about</h2>
+      <div class="about-grid">
+        <div class="reveal about-text">
+          <p>
+            I'm a BSIT graduate and Python developer from Daska, Pakistan. I love
+            building clean, efficient backend systems and robust applications.
+          </p>
+          <p>
+            My core tools are Python, SQL, and database management. I'm building 
+            a freelance practice on Upwork and focusing on Python backend development.
+          </p>
+          <p>
+            I also teach: I lead courses at the BS level which keeps my technical
+            fundamentals sharp.
+          </p>
+        </div>
+        <div class="reveal term-card">
+          <div class="term-head"><span class="dots"><i></i><i></i><i></i></span><span>about.json</span></div>
+          <pre><code>{
+  <span class="p">"name"</span>: <span class="s">"Ali Akmal"</span>,
+  <span class="p">"location"</span>: <span class="s">"Daska, PK"</span>,
+  <span class="p">"education"</span>: <span class="s">"BSIT, Graduated"</span>,
+  <span class="p">"teaches"</span>: <span class="s">"BS Classes"</span>,
+  <span class="p">"focus"</span>: [<span class="s">"Pyhton"</span>, <span class="s">"SQL"</span>, <span class="s">"automation"</span>],
+  <span class="p">"open_to_work"</span>: <span class="n">true</span>
+}</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="wrap section">
+      <h2 class="reveal"><span class="c">//</span> skills</h2>
+      <p class="sub reveal">Self-assessed. Bars fill as you scroll.</p>
+      <div class="skills">
+        <div class="skill reveal" data-level="85"><span class="s-name">power_bi</span><span class="bar"><span class="fill"></span></span><span class="pct">0%</span></div>
+        <div class="skill reveal" data-level="80"><span class="s-name">sql</span><span class="bar"><span class="fill"></span></span><span class="pct">0%</span></div>
+        <div class="skill reveal" data-level="85"><span class="s-name">excel</span><span class="bar"><span class="fill"></span></span><span class="pct">0%</span></div>
+        <div class="skill reveal" data-level="70"><span class="s-name">python</span><span class="bar"><span class="fill"></span></span><span class="pct">0%</span></div>
+        <div class="skill reveal" data-level="60"><span class="s-name">html_css</span><span class="bar"><span class="fill"></span></span><span class="pct">0%</span></div>
+        <div class="skill reveal" data-level="55"><span class="s-name">n8n_automation</span><span class="bar"><span class="fill"></span></span><span class="pct">0%</span></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="wrap section">
+      <div class="sec-head">
+        <h2 class="reveal"><span class="c">//</span> projects</h2>
+        <div class="toolbar" id="toolbar" hidden>
+          <button class="btn small primary" type="button" id="addBtn">+ add project</button>
+          <button class="btn small" type="button" id="manageBtn" aria-pressed="false">manage</button>
+          <button class="btn small danger" type="button" id="resetBtn">reset</button>
+        </div>
+      </div>
+      <div class="cards" id="cards"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="wrap section">
+      <h2 class="reveal"><span class="c">//</span> contact</h2>
+      <div class="contact-grid">
+        <p class="reveal sub">Have a dashboard, report or small tool you need built? Message me on WhatsApp and I'll reply as soon as I can.</p>
+        <div class="reveal term-card wa-card">
+          <div class="term-head"><span class="dots"><i></i><i></i><i></i></span><span>contact.sh</span></div>
+          <div class="wa-body">
+            <p class="wa-cmd"><span class="c">$</span> whatsapp --chat <span class="s">"+92 309 8208994"</span></p>
+            <a class="btn wa-btn" href="https://wa.me/923098208994?text=Hi%20Ali%2C%20I%20found%20your%20portfolio%20and%20I%27d%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> chat on whatsapp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot wrap">
+    <span>&copy; <span id="year"></span> Ali Akmal</span>
+    <span class="c">built with html, css &amp; a little js</span>
+  </footer>
+
+  <!-- Sticky WhatsApp button -->
+  <a class="wa-float" href="https://wa.me/923098208994?text=Hi%20Ali%2C%20I%20found%20your%20portfolio%20and%20I%27d%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" aria-label="Chat with Ali on WhatsApp">
+    <span class="wa-label">chat with me</span>
+    <span class="wa-icon"><svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></span>
+  </a>
+
+  <!-- Add project dialog -->
+  <dialog class="dlg" id="dlg" aria-labelledby="dlgTitle">
+    <form class="form" id="projForm">
+      <div class="term-head"><span class="dots"><i></i><i></i><i></i></span><span id="dlgTitle">add_project.sh</span></div>
+      <label><span class="c">$</span> title<input name="title" required maxlength="60" /></label>
+      <label><span class="c">$</span> description<textarea name="desc" rows="3" required maxlength="180"></textarea></label>
+      <label><span class="c">$</span> tags (comma separated)<input name="tags" placeholder="python, sql, dashboard" /></label>
+      <label><span class="c">$</span> link (optional)<input name="link" placeholder="https://github.com/you/project" /></label>
+      <label class="check"><input type="checkbox" name="wip" /> still in progress</label>
+      <p class="err" id="formErr" role="alert"></p>
+      <div class="dlg-actions">
+        <button class="btn" type="button" id="cancelBtn">cancel</button>
+        <button class="btn primary" type="submit">add project</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
